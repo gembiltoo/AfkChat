@@ -12,11 +12,11 @@ BreezeChat is a lightweight Minecraft: Java Edition chat client for Android. Joi
 
 ## 🤖 Made with AI (please read)
 
-BreezeChat is **vibe-coded** ("slop-coded", if you like). Almost all of the code was written by an AI assistant ([Claude](https://claude.ai) by Anthropic). The maintainer ([@gembiltoo](https://github.com/gembiltoo)) comes up with the features, sends bug reports and screenshots, and tests every build on a real phone and real servers. The app is put together on a phone with **Sketchware Pro**.
+BreezeChat is **vibe-coded** ("slop-coded", if you like). Almost all of the code was written by an AI assistant ([Claude](https://claude.ai) by Anthropic). The maintainer ([@gembiltoo](https://github.com/gembiltoo)) comes up with the features, sends bug reports and screenshots, and tests every build on a real phone and real servers. The whole app is built on an Android phone, with no PC.
 
 What that means for you:
 
-- 🐛 **Expect bugs.** The code has not had a professional review or a security audit, and not every feature has been tried on every server.
+- 🐛 **Expect bugs.** That is normal, since everything is made on a phone. The code has not had a professional review or a security audit, and not every feature has been tried on every server.
 - 🔐 **Look before you trust it with an account.** Online accounts sign in on the official Microsoft device-code page, and BreezeChat never sees your Microsoft password. Offline-account passwords (used for automatic `/login`) are stored only on your phone. BreezeChat has no ads and no analytics of its own. It only talks to Minecraft servers, Microsoft/Mojang sign-in, GitHub (the update check) and a free web translation service when you translate a chat line.
 - 🔍 **The source is small and readable.** It is plain Java in a few files. Read it, break it, fix it.
 - 🤝 **Issues and pull requests are welcome**, from humans and from AIs.
@@ -98,9 +98,9 @@ The top bar has four tabs: 💬 chat, 👥 players, 🎒 inventory, 📍 map and
 
 Some phones (Samsung, Xiaomi and others) stop apps that run in the background, and the server then disconnects you with "Timed out". In **Settings → Stay connected in the background**, open the battery list and set BreezeChat to **Unrestricted**. Keep the notification visible: it has **Open** and **Leave all** buttons.
 
-## 🛠️ Build it yourself (Sketchware Pro)
+## 🛠️ Build it yourself
 
-BreezeChat is a set of plain Java files, built with [Sketchware Pro](https://github.com/Sketchware-Pro/Sketchware-Pro).
+BreezeChat is a set of plain Java files, made to be built in an Android app builder on a phone.
 
 1. Create a project with the package name **`com.breezechat.gem`**.
 2. Put the Java files (`BreezeAuth`, `BreezeBlocks`, `BreezeChatUI`, `BreezeClient`, `BreezeItems`, `BreezeLang`, `BreezeService`) in the project's `java` folder.
@@ -137,11 +137,11 @@ Found a bug? Open an [issue](https://github.com/gembiltoo/BreezeChat/issues) and
 
 ## 🤖 Dibuat dengan AI (mohon dibaca)
 
-BreezeChat dibuat dengan **vibe coding** (atau "slop coding", kalau mau). Hampir semua kodenya ditulis oleh asisten AI ([Claude](https://claude.ai) dari Anthropic). Pembuatnya ([@gembiltoo](https://github.com/gembiltoo)) menentukan fitur, mengirim laporan bug dan tangkapan layar, lalu mencoba tiap versi di HP dan server sungguhan. Aplikasinya dirakit di HP memakai **Sketchware Pro**.
+BreezeChat dibuat dengan **vibe coding** (atau "slop coding", kalau mau). Hampir semua kodenya ditulis oleh asisten AI ([Claude](https://claude.ai) dari Anthropic). Pembuatnya ([@gembiltoo](https://github.com/gembiltoo)) menentukan fitur, mengirim laporan bug dan tangkapan layar, lalu mencoba tiap versi di HP dan server sungguhan. Seluruh aplikasi dibuat lewat HP Android, tanpa PC.
 
 Artinya untuk kamu:
 
-- 🐛 **Mungkin masih ada bug.** Kodenya belum diperiksa secara profesional atau diaudit keamanannya, dan belum semua fitur dicoba di semua server.
+- 🐛 **Mungkin masih ada bug.** Wajar saja karena pembuatannya lewat HP. Kodenya belum diperiksa secara profesional atau diaudit keamanannya, dan belum semua fitur dicoba di semua server.
 - 🔐 **Periksa dulu sebelum mempercayakan akun.** Akun online masuk lewat halaman resmi Microsoft, BreezeChat tidak pernah melihat kata sandi Microsoft-mu. Kata sandi akun offline (untuk `/login` otomatis) hanya disimpan di HP-mu. BreezeChat tidak punya iklan dan tidak punya analitik sendiri. Aplikasi hanya terhubung ke server Minecraft, login Microsoft/Mojang, GitHub (cek pembaruan), dan layanan terjemahan web gratis saat kamu menerjemahkan chat.
 - 🔍 **Kodenya kecil dan mudah dibaca.** Berupa Java biasa dalam beberapa file. Silakan baca, utak-atik, dan perbaiki.
 - 🤝 **Issue dan pull request diterima**, dari manusia maupun AI.
