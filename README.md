@@ -16,7 +16,7 @@ BreezeChat is **vibe-coded** ("slop-coded", if you like). Almost all of the code
 
 What that means for you:
 
-- 🐛 **Expect bugs.** That is normal, since everything is made on a phone. The code has not had a professional review or a security audit, and not every feature has been tried on every server.
+- 🐛 **Expect bugs.** It is normal to find bugs, since everything is made on a phone. The code has not had a professional review or a security audit, and not every feature has been tried on every server.
 - 🔐 **Look before you trust it with an account.** Online accounts sign in on the official Microsoft device-code page, and BreezeChat never sees your Microsoft password. Offline-account passwords (used for automatic `/login`) are stored only on your phone. BreezeChat has no ads and no analytics of its own. It only talks to Minecraft servers, Microsoft/Mojang sign-in, GitHub (the update check) and a free web translation service when you translate a chat line.
 - 🔍 **The source is small and readable.** It is plain Java in a few files. Read it, break it, fix it.
 - 🤝 **Issues and pull requests are welcome**, from humans and from AIs.
@@ -141,7 +141,7 @@ BreezeChat dibuat dengan **vibe coding** (atau "slop coding", kalau mau). Hampir
 
 Artinya untuk kamu:
 
-- 🐛 **Mungkin masih ada bug.** Wajar saja karena pembuatannya lewat HP. Kodenya belum diperiksa secara profesional atau diaudit keamanannya, dan belum semua fitur dicoba di semua server.
+- 🐛 **Mungkin masih ada bug.** Wajar jika ada bug karena pembuatannya lewat HP. Kodenya belum diperiksa secara profesional atau diaudit keamanannya, dan belum semua fitur dicoba di semua server.
 - 🔐 **Periksa dulu sebelum mempercayakan akun.** Akun online masuk lewat halaman resmi Microsoft, BreezeChat tidak pernah melihat kata sandi Microsoft-mu. Kata sandi akun offline (untuk `/login` otomatis) hanya disimpan di HP-mu. BreezeChat tidak punya iklan dan tidak punya analitik sendiri. Aplikasi hanya terhubung ke server Minecraft, login Microsoft/Mojang, GitHub (cek pembaruan), dan layanan terjemahan web gratis saat kamu menerjemahkan chat.
 - 🔍 **Kodenya kecil dan mudah dibaca.** Berupa Java biasa dalam beberapa file. Silakan baca, utak-atik, dan perbaiki.
 - 🤝 **Issue dan pull request diterima**, dari manusia maupun AI.
