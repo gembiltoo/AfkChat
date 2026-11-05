@@ -29,7 +29,7 @@ What that means for you:
 - ⚡ **Quick commands**: your own buttons (`/home`, `/spawn`, `/sell all` ...). `{pos}` becomes your coordinates
 - 🕐 Optional **time before every chat line**
 - 🔔 **Chat alerts**: vibrate when someone says your name or a word you chose (for example `restart, event`)
-- 🙉 Tap a chat line to **reply (/msg)**, **ignore** that player, **translate** it (Indonesian or English) or copy it
+- 🙉 Press and hold a chat line to **reply (/msg)**, **ignore** that player, **translate** it (Indonesian or English) or copy it
 - 👥 Full tab list with ping and game mode, plus **search in the player list**
 
 **Accounts and staying online**
@@ -63,8 +63,8 @@ What that means for you:
 
 | | |
 |---|---|
-| <img src="screenshots/1-main-menu.jpg" width="260"><br>**Main menu.** Your accounts (swipe left or right), your servers with ping and player count, and a **Connections** bar showing every running session. The **+** button adds a server. | <img src="screenshots/2-join.jpg" width="260"><br>**Join a server.** Tap a server and choose which account joins, or **Connect all accounts** to bring them all online. Each account gets its own tab. |
-| <img src="screenshots/3-player-list.jpg" width="260"><br>**Player list.** Everyone online with ping, and a search box to find a player fast. | <img src="screenshots/4-map.jpg" width="260"><br>**Map and movement.** Live minimap with players and mobs, zoom, waypoints (📍) and minimap settings (⚙), hotbar, joystick, sneak, and a pad to look around. |
+| <img src="screenshots/1-main-menu.jpg" width="260"><br>**Main menu.** Your accounts (swipe left or right), your servers with ping and player count, and a **Connections** bar showing every running session. The **+** button adds a server. | <img src="screenshots/2-join.jpg" width="260"><br>**Join a server.** Tap a server and choose which account joins, or **Connect all accounts** to bring them all online. Each account gets its own tab. In the chat, **press and hold a message** for a menu: reply (/msg), ignore the player, translate (Indonesian or English), copy. |
+| <img src="screenshots/3-player-list.jpg" width="260"><br>**Player list.** Everyone online with ping, and a search box to find a player fast. **Tap a player** for a menu: send a private message, follow, request teleport (/tpa), copy the name, or run your own saved commands (use `{player}` for their name). | <img src="screenshots/4-map.jpg" width="260"><br>**Map and movement.** Live minimap with players and mobs, zoom, waypoints (📍) and minimap settings (⚙), hotbar, joystick, sneak, and a pad to look around. |
 | <img src="screenshots/5-inventory.jpg" width="260"><br>**Inventory.** Armor, your character, off hand, backpack and hotbar. Tap to pick up or put down, hold to right click, double tap for options. | <img src="screenshots/6-commands.jpg" width="260"><br>**Commands.** Browse the server's own command list, save your own commands, or complete a player name. |
 
 ## 🎮 Supported versions
@@ -95,7 +95,7 @@ Pick the server's version in the server form. If a server refuses the connection
 
 The top bar has four tabs: 💬 chat, 👥 players, 🎒 inventory, 📍 map and movement.
 
-- **Chat**: type a message or a `/command`. **Cmds** opens saved commands and the server's command list. Tap a chat line for reply, ignore, translate or copy.
+- **Chat**: type a message or a `/command`. **Cmds** opens saved commands and the server's command list. Press and hold a chat line for reply, ignore, translate or copy.
 - **Players**: tap a player to send a private message, follow, `/tpa` or run your saved commands. The **Player list** button at the top searches every online player.
 - **Inventory**: tap an item to use it, hold it, place it or drop it. Server menus (a compass, a shop) appear here. Chests opened from the map get the **Take all / Quick stack / Put backpack** buttons.
 - **Map**: tap a chest, barrel or villager to open it or trade. **📍** (left of the map) opens waypoints, **⚙** opens Minimap settings (AFK method, players and mobs, joystick, auto jump, auto respawn, tap to walk, zoom), **+ / −** zoom.
