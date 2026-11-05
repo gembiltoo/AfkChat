@@ -35,6 +35,7 @@ What that means for you:
 **Accounts and staying online**
 - 👤 Many accounts at once: offline and Microsoft, connect or leave them all in one tap
 - 🌙 Background mode, auto login, auto respawn, **auto reconnect** (waits longer after each failed try; no retry on bans or whitelists)
+- ⏰ **Schedule account**: pick accounts (or all), pick servers (or all), and a time, and BreezeChat connects them for you. Set the time as a delay (`2d 5h 30min 10s`: s = seconds, min = minutes, h = hours, d = days, m = months) or on a date with the month by name (for example 7 November, 19:30). View, edit or delete schedules from the ☰ menu. Keep BreezeChat running or connected, because schedules only start while the app is alive
 - 🛡️ **Anti-kick AFK** with a method you choose: Jump, Swing arm, Sneak, Walk, Turn or Quiet
 - 📊 **Session stats**: online time, distance walked, deaths, messages, reconnects, biome and world
 
@@ -116,6 +117,7 @@ BreezeChat is a set of plain Java files, made to be built in an Android app buil
 
 ## ⚠️ Known limitations
 
+- Schedules need the app to stay alive in the background (see below). If the app was closed for more than 10 minutes past the start time, the schedule is marked as missed.
 - Native features are 1.19.4 – 1.20.1. Other versions need a server that accepts older clients.
 - It is a chat client, not a game launcher. There is no 3D view. Movement is simplified, so on uneven terrain, water or fences the server may move you back.
 - Minimap range is limited by the chunks the server sends. Remembered areas are only colours, not live.
