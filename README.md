@@ -113,6 +113,7 @@ BreezeChat is a set of plain Java files, made to be built in an Android app buil
 - Microsoft sign-in is not included in backups. Sign in again after restoring.
 - Servers with strict anti-bot checks may refuse the client.
 - Translation uses free web services and needs internet. They can refuse when used too often.
+- **Android only.** The app has not been tested on PC, computer or laptop (for example through an emulator).
 - **Java servers only.** Bedrock servers cannot be joined.
 - Some messages with names or numbers are not translated into other languages yet.
 
