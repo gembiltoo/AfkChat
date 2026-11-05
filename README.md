@@ -59,6 +59,14 @@ What that means for you:
 - 💾 Backup of accounts, servers, waypoints and quick commands to a folder, restore after reinstalling
 - 🔔 Update notice when a new version is out
 
+## 📸 Screenshots
+
+| | |
+|---|---|
+| <img src="screenshots/1-main-menu.jpg" width="260"><br>**Main menu.** Your accounts (swipe left or right), your servers with ping and player count, and a **Connections** bar showing every running session. The **+** button adds a server. | <img src="screenshots/2-join.jpg" width="260"><br>**Join a server.** Tap a server and choose which account joins, or **Connect all accounts** to bring them all online. Each account gets its own tab. |
+| <img src="screenshots/3-player-list.jpg" width="260"><br>**Player list.** Everyone online with ping, and a search box to find a player fast. | <img src="screenshots/4-map.jpg" width="260"><br>**Map and movement.** Live minimap with players and mobs, zoom, waypoints (📍) and minimap settings (⚙), hotbar, joystick, sneak, and a pad to look around. |
+| <img src="screenshots/5-inventory.jpg" width="260"><br>**Inventory.** Armor, your character, off hand, backpack and hotbar. Tap to pick up or put down, hold to right click, double tap for options. | <img src="screenshots/6-commands.jpg" width="260"><br>**Commands.** Browse the server's own command list, save your own commands, or complete a player name. |
+
 ## 🎮 Supported versions
 
 | Server version | How it works |
