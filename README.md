@@ -10,22 +10,56 @@ BreezeChat is a lightweight Minecraft: Java Edition chat client for Android. Joi
 
 ---
 
+## 🤖 Made with AI (please read)
+
+BreezeChat is **vibe-coded** ("slop-coded", if you like). Almost all of the code was written by an AI assistant ([Claude](https://claude.ai) by Anthropic). The maintainer ([@gembiltoo](https://github.com/gembiltoo)) comes up with the features, sends bug reports and screenshots, and tests every build on a real phone and real servers. The app is put together on a phone with **Sketchware Pro**.
+
+What that means for you:
+
+- 🐛 **Expect bugs.** The code has not had a professional review or a security audit, and not every feature has been tried on every server.
+- 🔐 **Look before you trust it with an account.** Online accounts sign in on the official Microsoft device-code page, and BreezeChat never sees your Microsoft password. Offline-account passwords (used for automatic `/login`) are stored only on your phone. BreezeChat has no ads and no analytics of its own. It only talks to Minecraft servers, Microsoft/Mojang sign-in, GitHub (the update check) and a free web translation service when you translate a chat line.
+- 🔍 **The source is small and readable.** It is plain Java in a few files. Read it, break it, fix it.
+- 🤝 **Issues and pull requests are welcome**, from humans and from AIs.
+
+---
+
 ## ✨ Features
 
-- 💬 **Chat and commands**: chat filter, join commands, repeating message, tappable links and clickable server messages
+**Chat**
+- 💬 Chat and commands, chat filter, join commands, repeating message, tappable links and clickable server messages
 - 🔎 **Cmds menu**: search the server's own command list, or save your own commands (use `{player}` for a player's name)
-- 👥 **Many accounts at once**: offline and Microsoft accounts, connect or leave them all in one tap
-- 🌙 **Background mode**: keep using other apps while your accounts stay online
-- 🗺️ **Live minimap**: biome colours, nearby players and mobs, N/E/S/W letters, zoom, tap to walk
-- 🏃 **Movement**: joystick or buttons, look pad, sneak toggle, auto jump, follow a nearby player
-- 🎒 **Inventory and mini hotbar**: item pictures, use / hold / drop items, hotbar right under the map
-- 📋 **Server info**: scoreboard, titles, action bar, weather, time, ping
-- 👀 **Full tab list**: ping and game mode of every player, plus the server's header and footer
-- 🌐 **Translate a chat message**: long-press a line, translate to Indonesian or English
-- 🎨 **Languages and themes**: English, Indonesian, Spanish, Portuguese, French, German, Russian; Indigo, AMOLED black, Forest, Crimson, Ocean
-- 🔁 **Auto everything**: auto login, auto respawn, anti-kick AFK, auto reconnect
-- 💾 **Backup**: save accounts and servers to a folder, restore after reinstalling
-- 🔔 **Update notice**: BreezeChat tells you when a new version is out
+- ⚡ **Quick commands**: your own buttons (`/home`, `/spawn`, `/sell all` ...). `{pos}` becomes your coordinates
+- 🕐 Optional **time before every chat line**
+- 🔔 **Chat alerts**: vibrate when someone says your name or a word you chose (for example `restart, event`)
+- 🙉 Tap a chat line to **reply (/msg)**, **ignore** that player, **translate** it (Indonesian or English) or copy it
+- 👥 Full tab list with ping and game mode, plus **search in the player list**
+
+**Accounts and staying online**
+- 👤 Many accounts at once: offline and Microsoft, connect or leave them all in one tap
+- 🌙 Background mode, auto login, auto respawn, **auto reconnect** (waits longer after each failed try; no retry on bans or whitelists)
+- 🛡️ **Anti-kick AFK** with a method you choose: Jump, Swing arm, Sneak, Walk, Turn or Quiet
+- 📊 **Session stats**: online time, distance walked, deaths, messages, reconnects, biome and world
+
+**Map and movement**
+- 🗺️ **Live minimap** with detailed biome colours (smooth borders), hill shading, water depth, nearby players and mobs, zoom, a smooth arrow that shows where you look
+- 🧭 **Explored map memory**: areas you have seen stay on the map (dimmed) and are saved on your phone, per server and per world
+- 📍 **Waypoints**: save places, see them on the minimap with name and distance (an arrow at the edge when far away), walk to them
+- ☠️ **Death point**: a waypoint is saved where you die, so you can walk back for your items
+- 🌀 **Portal coordinates**: Overworld ↔ Nether conversion with one tap
+- 🏃 Joystick or buttons, look pad, sneak toggle, auto jump, follow a nearby player, optional **tap map to walk**
+- 🌊 Simple water physics (sink, swim, wade) so acid, lava and swimming behave like the game
+
+**Inventory and trading**
+- 🎒 Java-style inventory with your character, armor, held item, durability bars and leather armor colours
+- 📦 **Open chests, barrels, ender chests and shulker boxes from the map**, with **Take all**, **Quick stack** and **Put backpack** buttons
+- 🧑‍🌾 **Trade with villagers from the map**: tap one on the minimap, pick a trade, BreezeChat fills the items for you
+- 🧰 Mini inventory and hotbar under the map
+
+**App**
+- ☰ Side menu (quick commands, stats, alerts, settings, help) and a **home screen shortcut** for any server with its icon
+- 🎨 Colourful UI, 7 languages (English, Indonesian, Spanish, Portuguese, French, German, Russian) and 5 themes (Indigo, AMOLED black, Forest, Crimson, Ocean)
+- 💾 Backup of accounts, servers, waypoints and quick commands to a folder, restore after reinstalling
+- 🔔 Update notice when a new version is out
 
 ## 🎮 Supported versions
 
@@ -46,54 +80,42 @@ Pick the server's version in the server form. If a server refuses the connection
 
 1. On the home screen, swipe the account card to the last card (**+**) and add an account:
    - **Offline**: any name, for offline-mode ("cracked") servers. You can store a password for automatic `/login`.
-   - **Online (Microsoft)**: sign in on the official `microsoft.com/link` page with the code shown. BreezeChat never asks for your Microsoft password.
+   - **Online (Microsoft)**: sign in on the official `microsoft.com/link` page with the code shown.
 2. Tap the **+** button and add a server: name, address, version, and the Forge switch if the server needs it.
-3. Tap the server card to join. You can join the same server with several accounts: go back and join again with another account.
+3. Tap the server card to join. You can join the same server with several accounts.
 4. Open **Connections** to see every running session, reconnect or leave them.
 
 ## 🕹️ Using the game screen
 
 The top bar has four tabs: 💬 chat, 👥 players, 🎒 inventory, 📍 map and movement.
 
-**Chat**
-- Type a message or a `/command` and send it.
-- **Cmds** opens saved commands and the server's command list (searchable).
-- Tap a link or a clickable server message to use it. Long-press a line to translate or copy it.
-
-**Players**
-- Shows every online player with ping and game mode. Tap one to send a private message, follow, `/tpa` or run your saved commands.
-
-**Inventory**
-- Tap an item to use it, hold it, place it, or drop it. If a server menu opens (for example a compass), it appears here.
-
-**Map and movement**
-- Tap the map to walk to that spot. Any move button stops it.
-- **+ / −** zoom the map. **⚙** (bottom left of the map) opens Minimap settings.
-- The mini hotbar is under the map: tap a slot to select it, tap the selected slot again to use the item.
-- Left side: health, ping, weather and time, coordinates. Right side: **Sneak** (tap to crouch, tap again to stand). If Auto jump is off, a Jump button appears.
-- Use the joystick to move and the pad at the bottom to look around.
-
-**Minimap settings (⚙)**: AFK mode, show nearby players and mobs, joystick or buttons, auto jump, auto respawn, zoom level and maximum zoom.
-
-## ⚙️ Settings
-
-- Auto reconnect (delay and number of tries), anti-kick AFK
-- Commands to run after joining, repeating message, follow distance
-- Chat filter (hide lines containing words) and highlight messages with your name
-- Backup folder, restore, **Language** and **Theme**
+- **Chat**: type a message or a `/command`. **Cmds** opens saved commands and the server's command list. Tap a chat line for reply, ignore, translate or copy.
+- **Players**: tap a player to send a private message, follow, `/tpa` or run your saved commands. The **Player list** button at the top searches every online player.
+- **Inventory**: tap an item to use it, hold it, place it or drop it. Server menus (a compass, a shop) appear here. Chests opened from the map get the **Take all / Quick stack / Put backpack** buttons.
+- **Map**: tap a chest, barrel or villager to open it or trade. **📍** (left of the map) opens waypoints, **⚙** opens Minimap settings (AFK method, players and mobs, joystick, auto jump, auto respawn, tap to walk, zoom), **+ / −** zoom.
 
 ## 🔋 Staying online in the background
 
 Some phones (Samsung, Xiaomi and others) stop apps that run in the background, and the server then disconnects you with "Timed out". In **Settings → Stay connected in the background**, open the battery list and set BreezeChat to **Unrestricted**. Keep the notification visible: it has **Open** and **Leave all** buttons.
 
+## 🛠️ Build it yourself (Sketchware Pro)
+
+BreezeChat is a set of plain Java files, built with [Sketchware Pro](https://github.com/Sketchware-Pro/Sketchware-Pro).
+
+1. Create a project with the package name **`com.breezechat.gem`**.
+2. Put the Java files (`BreezeAuth`, `BreezeBlocks`, `BreezeChatUI`, `BreezeClient`, `BreezeItems`, `BreezeLang`, `BreezeService`) in the project's `java` folder.
+3. Register `com.breezechat.gem.BreezeService` as a service in the AndroidManifest and add the permissions: INTERNET, FOREGROUND_SERVICE, POST_NOTIFICATIONS, WAKE_LOCK and VIBRATE (VIBRATE is only for chat alerts).
+4. From the main activity, create `BreezeChatUI` and show its view (see `BreezeChatUI.build()`), and pass shortcut extras (`bc_srv`, `bc_acc`) to it.
+
 ## ⚠️ Known limitations
 
 - Native features are 1.19.4 – 1.20.1. Other versions need a server that accepts older clients.
 - It is a chat client, not a game launcher. There is no 3D view. Movement is simplified, so on uneven terrain, water or fences the server may move you back.
-- Minimap range is limited by the chunks the server sends.
+- Minimap range is limited by the chunks the server sends. Remembered areas are only colours, not live.
 - Microsoft sign-in is not included in backups. Sign in again after restoring.
 - Servers with strict anti-bot checks may refuse the client.
-- Translation uses a free web service and needs internet.
+- Translation uses free web services and needs internet. They can refuse when used too often.
+- **Java servers only.** Bedrock servers cannot be joined.
 - Some messages with names or numbers are not translated into other languages yet.
 
 ## 🐞 Feedback
@@ -113,18 +135,30 @@ Found a bug? Open an [issue](https://github.com/gembiltoo/BreezeChat/issues) and
 
 > Masih **beta**. Proyek buatan penggemar, tidak berafiliasi dengan Mojang atau Microsoft.
 
+## 🤖 Dibuat dengan AI (mohon dibaca)
+
+BreezeChat dibuat dengan **vibe coding** (atau "slop coding", kalau mau). Hampir semua kodenya ditulis oleh asisten AI ([Claude](https://claude.ai) dari Anthropic). Pembuatnya ([@gembiltoo](https://github.com/gembiltoo)) menentukan fitur, mengirim laporan bug dan tangkapan layar, lalu mencoba tiap versi di HP dan server sungguhan. Aplikasinya dirakit di HP memakai **Sketchware Pro**.
+
+Artinya untuk kamu:
+
+- 🐛 **Mungkin masih ada bug.** Kodenya belum diperiksa secara profesional atau diaudit keamanannya, dan belum semua fitur dicoba di semua server.
+- 🔐 **Periksa dulu sebelum mempercayakan akun.** Akun online masuk lewat halaman resmi Microsoft, BreezeChat tidak pernah melihat kata sandi Microsoft-mu. Kata sandi akun offline (untuk `/login` otomatis) hanya disimpan di HP-mu. BreezeChat tidak punya iklan dan tidak punya analitik sendiri. Aplikasi hanya terhubung ke server Minecraft, login Microsoft/Mojang, GitHub (cek pembaruan), dan layanan terjemahan web gratis saat kamu menerjemahkan chat.
+- 🔍 **Kodenya kecil dan mudah dibaca.** Berupa Java biasa dalam beberapa file. Silakan baca, utak-atik, dan perbaiki.
+- 🤝 **Issue dan pull request diterima**, dari manusia maupun AI.
+
 ## Fitur utama
 
-- Chat dan perintah, filter chat, tautan dan pesan server yang bisa diketuk
-- Menu **Cmds**: cari perintah milik server atau simpan perintah sendiri (`{player}` diganti nama pemain)
-- Banyak akun sekaligus: offline dan Microsoft
-- Mode latar belakang, auto login, auto respawn, AFK anti-kick, hubungkan ulang otomatis
-- Minimap: zoom, huruf N/E/S/W, ketuk peta untuk berjalan, hotbar mini di bawah peta
-- Joystick, tombol Sneak (ketuk untuk jongkok, ketuk lagi untuk berdiri), lompat otomatis, ikuti pemain
-- Tab list lengkap: ping, mode permainan, header dan footer
-- Tahan satu baris chat untuk **menerjemahkan** ke Indonesia atau Inggris
-- 7 bahasa dan 5 tema (termasuk AMOLED hitam)
-- Backup akun dan server ke folder
+- **Chat**: filter chat, menu **Cmds**, **Quick commands** (tombol perintah sendiri), jam di depan tiap baris (opsional), **peringatan chat** (getar saat namamu disebut), ketuk baris chat untuk **membalas (/msg)**, **mengabaikan** pemain, atau **menerjemahkan**
+- **Akun**: banyak akun sekaligus (offline dan Microsoft), mode latar belakang, auto login, auto respawn, **sambung ulang otomatis**, **AFK anti-kick** dengan metode pilihan (Jump, Swing, Sneak, Walk, Turn, Quiet), **statistik sesi**
+- **Minimap**: warna biome yang detail, bayangan bukit, kedalaman air, pemain dan mob, zoom, panah arah hadap yang halus
+- **Peta jelajah**: area yang pernah kamu lihat tetap tampil (lebih gelap) dan tersimpan di HP
+- **Waypoint** 📍 dengan nama dan jarak, **titik kematian otomatis**, dan **koordinat portal** Overworld ↔ Nether
+- **Chest, barrel, ender chest dan shulker** bisa dibuka dari peta, dengan tombol **Take all**, **Quick stack**, **Put backpack**
+- **Trade dengan villager** dari peta
+- Joystick, sneak, lompat otomatis, ikuti pemain, fisika air sederhana
+- Menu samping ☰, **shortcut layar utama** dengan ikon server
+- Tampilan berwarna, 7 bahasa, 5 tema (termasuk AMOLED hitam)
+- Backup akun, server, waypoint dan quick commands ke folder
 
 ## Versi yang didukung
 
@@ -134,19 +168,20 @@ Server **1.19 sampai 26.1**. Versi 1.19.4, 1.20 dan 1.20.1 didukung penuh. Versi
 
 1. Unduh APK terbaru dari halaman [Releases](https://github.com/gembiltoo/BreezeChat/releases), lalu pasang.
 2. Aplikasi awalnya berbahasa Inggris. Ganti di **⚙ Settings → Language**.
-3. Geser kartu akun sampai kartu **+**, lalu tambah akun: **Offline** (nama bebas) atau **Online (Microsoft)**. Login Microsoft memakai halaman resmi microsoft.com/link, BreezeChat tidak meminta kata sandi Anda.
+3. Geser kartu akun sampai kartu **+**, lalu tambah akun: **Offline** (nama bebas) atau **Online (Microsoft)**.
 4. Tambah server (nama, alamat, versi), lalu ketuk kartu server untuk masuk.
 5. Di dalam game ada empat tab: 💬 chat, 👥 pemain, 🎒 inventori, 📍 peta dan gerak.
 
 ## Agar tetap online saat di latar belakang
 
-Di **Settings → Stay connected in the background**, buka daftar baterai dan set BreezeChat ke **Tanpa batasan (Unrestricted)**. Kalau tidak, beberapa HP mematikan aplikasi dan server memutus Anda dengan "Timed out".
+Di **Settings → Stay connected in the background**, buka daftar baterai dan set BreezeChat ke **Tanpa batasan (Unrestricted)**. Kalau tidak, beberapa HP mematikan aplikasi dan server memutus kamu dengan "Timed out".
 
 ## Keterbatasan
 
-- Ini klien chat, bukan launcher dan tidak ada tampilan 3D. Di medan tidak rata, air, atau pagar, server bisa menarik Anda kembali.
+- Ini klien chat, bukan launcher dan tidak ada tampilan 3D. Di medan tidak rata, air, atau pagar, server bisa menarik kamu kembali.
+- **Hanya server Java.** Server Bedrock tidak bisa dimasuki.
 - Login Microsoft tidak ikut di backup, silakan login lagi setelah restore.
-- Terjemahan memakai layanan web gratis dan butuh internet.
+- Terjemahan memakai layanan web gratis dan butuh internet. Layanan itu bisa menolak kalau dipakai terlalu sering.
 
 ## Lapor bug
 
