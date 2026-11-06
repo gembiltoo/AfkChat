@@ -6,6 +6,8 @@ BreezeChat is a lightweight Minecraft: Java Edition chat client for Android. Joi
 
 > Beta software, fan-made. Not affiliated with, endorsed by, or connected to Mojang or Microsoft.
 
+> **Not to be confused with** other projects named "BreezeChats" on GitHub. This is a Minecraft: Java Edition chat client for Android and has nothing to do with them.
+
 ---
 
 ## 🤖 Made with AI (please read)
