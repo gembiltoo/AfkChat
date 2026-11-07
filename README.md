@@ -68,15 +68,6 @@ The bar at the bottom has four tabs: 💬 Chat, 👥 Players, 🎒 Bag (inventor
 
 Some phones (Samsung, Xiaomi and others) stop apps that run in the background, and the server then disconnects you with "Timed out". In **Settings → Stay connected in the background**, open the battery list and set AfkChat to **Unrestricted**. Keep the notification visible: it has **Open** and **Leave all** buttons.
 
-## 🛠️ Build it yourself
-
-AfkChat is a set of plain Java files, made to be built in an Android app builder on a phone.
-
-1. Create a project with the package name **`com.afkchat.gem`**.
-2. Put the Java files (`AfkAuth`, `AfkBlocks`, `AfkChatUI`, `AfkClient`, `AfkItems`, `AfkLang`, `AfkService`) in the project's `java` folder.
-3. Register `com.afkchat.gem.AfkService` as a service in the AndroidManifest and add the permissions: INTERNET, FOREGROUND_SERVICE, POST_NOTIFICATIONS, WAKE_LOCK and VIBRATE (VIBRATE is only for chat alerts).
-4. From the main activity, create `AfkChatUI` and show its view (see `AfkChatUI.build()`), and pass shortcut extras (`bc_srv`, `bc_acc`) to it.
-
 ## ⚠️ Known limitations
 
 - Schedules need the app to stay alive in the background (see below). If the app was closed for more than 10 minutes past the start time, the schedule is marked as missed.
