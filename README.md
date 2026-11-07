@@ -8,8 +8,6 @@ AfkChat is a lightweight Minecraft: Java Edition chat client for Android. Join s
 
 > **Formerly BreezeChat.** AfkChat is the new name of this app. Earlier versions were released as **BreezeChat** (package `com.breezechat.gem`). AfkChat is a separate app (`com.afkchat.gem`) with a new signing key, so it installs next to the old one and does not update it. You can uninstall BreezeChat after you move over. Accounts, servers and waypoints can be moved with the backup feature (rename the old `BreezeChat-backup` folder to `AfkChat-backup`).
 
-> **Name notice:** other apps or projects may share a similar name but do something different. For example, [BreezeChats](https://github.com/ebenezerdon/breezechats) is a web chat that runs an AI model in the browser, and [BreezeChat by SAMi-Rn](https://github.com/SAMi-Rn/BreezeChat) is a real-time web chat built with React and Node.js. This project is a Minecraft: Java Edition chat client for Android and is not related to them.
-
 ---
 
 ## 🤖 Made with AI (please read)
