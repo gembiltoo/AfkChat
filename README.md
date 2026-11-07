@@ -23,45 +23,6 @@ What that means for you:
 
 ---
 
-## ✨ Features
-
-**Chat**
-- 💬 Chat and commands, chat filter, join commands, repeating message, tappable links and clickable server messages
-- 🔎 **Cmds menu**: search the server's own command list, or save your own commands (use `{player}` for a player's name)
-- ⚡ **Quick commands**: your own buttons (`/home`, `/spawn`, `/sell all` ...). `{pos}` becomes your coordinates
-- 🕐 Optional **time before every chat line**
-- 🔔 **Chat alerts**: vibrate when someone says your name or a word you chose (for example `restart, event`)
-- 🙉 Press and hold a chat line to **reply (/msg)**, **ignore** that player, **translate** it (Indonesian or English) or copy it
-- 👥 Full tab list with ping and game mode, plus **search in the player list**
-
-**Accounts and staying online**
-- 👤 Many accounts at once: offline and Microsoft, connect or leave them all in one tap
-- 🌙 Background mode, auto login, auto respawn, **auto reconnect** (waits longer after each failed try; no retry on bans or whitelists)
-- ⏰ **Schedule account**: pick accounts (or all), pick servers (or all), and a time, and AfkChat connects them for you. Set the time as a delay (`2d 5h 30min 10s`: s = seconds, min = minutes, h = hours, d = days, m = months) or on a date with the month by name (for example 7 November, 19:30). View, edit or delete schedules from the ☰ menu. Keep AfkChat running or connected, because schedules only start while the app is alive
-- 🛡️ **Anti-kick AFK** with a method you choose: Jump, Swing arm, Sneak, Walk, Turn or Quiet
-- 📊 **Session stats**: online time, distance walked, deaths, messages, reconnects, biome and world
-
-**Map and movement**
-- 🗺️ **Live minimap** with detailed biome colours (smooth borders), hill shading, water depth, nearby players and mobs, zoom, a smooth arrow that shows where you look
-- 🧭 **Explored map memory**: areas you have seen stay on the map (dimmed) and are saved on your phone, per server and per world
-- 📍 **Waypoints**: save places, see them on the minimap with name and distance (an arrow at the edge when far away), walk to them
-- ☠️ **Death point**: a waypoint is saved where you die, so you can walk back for your items
-- 🌀 **Portal coordinates**: Overworld ↔ Nether conversion with one tap
-- 🏃 Joystick or buttons, look pad, sneak toggle, auto jump, follow a nearby player, optional **tap map to walk**
-- 🌊 Simple water physics (sink, swim, wade) so acid, lava and swimming behave like the game
-
-**Inventory and trading**
-- 🎒 Java-style inventory with your character, armor, held item, durability bars and leather armor colours
-- 📦 **Open chests, barrels, ender chests and shulker boxes from the map**, with **Take all**, **Quick stack** and **Put backpack** buttons
-- 🧑‍🌾 **Trade with villagers from the map**: tap one on the minimap, pick a trade, AfkChat fills the items for you
-- 🧰 Mini inventory and hotbar under the map
-
-**App**
-- ☰ Side menu (quick commands, stats, alerts, settings, help) and a **home screen shortcut** for any server with its icon
-- 🎨 Colourful UI, 7 languages (English, Indonesian, Spanish, Portuguese, French, German, Russian) and 5 themes (Indigo, AMOLED black, Forest, Crimson, Ocean)
-- 💾 Backup of accounts, servers, waypoints and quick commands to a folder, restore after reinstalling
-- 🔔 Update notice when a new version is out
-
 ## 📸 Screenshots
 
 | | |
