@@ -1,23 +1,25 @@
-# 🌬️ BreezeChat
+# 💤 AfkChat
 
 **Stay in your Minecraft server chat from your phone. No game needed.**
 
-BreezeChat is a lightweight Minecraft: Java Edition chat client for Android. Join servers, chat, keep several accounts online in the background and look around on a live minimap, all with very little battery and data.
+AfkChat is a lightweight Minecraft: Java Edition chat client for Android. Join servers, chat, keep several accounts online in the background and look around on a live minimap, all with very little battery and data.
 
 > Beta software, fan-made. Not affiliated with, endorsed by, or connected to Mojang or Microsoft.
 
-> **Name notice:** other apps or projects may share the name "BreezeChat" or "BreezeChats" but do something different. For example, [BreezeChats](https://github.com/ebenezerdon/breezechats) is a web chat that runs an AI model in the browser, and [BreezeChat by SAMi-Rn](https://github.com/SAMi-Rn/BreezeChat) is a real-time web chat built with React and Node.js. This project is a Minecraft: Java Edition chat client for Android and is not related to them.
+> **Formerly BreezeChat.** AfkChat is the new name of this app. Earlier versions were released as **BreezeChat** (package `com.breezechat.gem`). AfkChat is a separate app (`com.afkchat.gem`) with a new signing key, so it installs next to the old one and does not update it. You can uninstall BreezeChat after you move over. Accounts, servers and waypoints can be moved with the backup feature (rename the old `BreezeChat-backup` folder to `AfkChat-backup`).
+
+> **Name notice:** other apps or projects may share a similar name but do something different. For example, [BreezeChats](https://github.com/ebenezerdon/breezechats) is a web chat that runs an AI model in the browser, and [BreezeChat by SAMi-Rn](https://github.com/SAMi-Rn/BreezeChat) is a real-time web chat built with React and Node.js. This project is a Minecraft: Java Edition chat client for Android and is not related to them.
 
 ---
 
 ## 🤖 Made with AI (please read)
 
-BreezeChat is **vibe-coded** ("slop-coded", if you like). Almost all of the code was written by an AI assistant ([Claude](https://claude.ai) by Anthropic). The maintainer ([@gembiltoo](https://github.com/gembiltoo)) comes up with the features, sends bug reports and screenshots, and tests every build on a real phone and real servers. The whole app is built on an Android phone, with no PC.
+AfkChat is **vibe-coded** ("slop-coded", if you like). Almost all of the code was written by an AI assistant ([Claude](https://claude.ai) by Anthropic). The maintainer ([@gembiltoo](https://github.com/gembiltoo)) comes up with the features, sends bug reports and screenshots, and tests every build on a real phone and real servers. The whole app is built on an Android phone, with no PC.
 
 What that means for you:
 
 - 🐛 **Expect bugs.** It is normal to find bugs, since everything is made on a phone. The code has not had a professional review or a security audit, and not every feature has been tried on every server.
-- 🔐 **Look before you trust it with an account.** Online accounts sign in on the official Microsoft device-code page, and BreezeChat never sees your Microsoft password. Offline-account passwords (used for automatic `/login`) are stored only on your phone. BreezeChat has no ads and no analytics of its own. It only talks to Minecraft servers, Microsoft/Mojang sign-in, GitHub (the update check) and a free web translation service when you translate a chat line.
+- 🔐 **Look before you trust it with an account.** Online accounts sign in on the official Microsoft device-code page, and AfkChat never sees your Microsoft password. Offline-account passwords (used for automatic `/login`) are stored only on your phone. AfkChat has no ads and no analytics of its own. It only talks to Minecraft servers, Microsoft/Mojang sign-in, GitHub (the update check) and a free web translation service when you translate a chat line.
 - 🔍 **The source is small and readable.** It is plain Java in a few files. Read it, break it, fix it.
 - 🤝 **Issues and pull requests are welcome**, from humans and from AIs.
 
@@ -37,7 +39,7 @@ What that means for you:
 **Accounts and staying online**
 - 👤 Many accounts at once: offline and Microsoft, connect or leave them all in one tap
 - 🌙 Background mode, auto login, auto respawn, **auto reconnect** (waits longer after each failed try; no retry on bans or whitelists)
-- ⏰ **Schedule account**: pick accounts (or all), pick servers (or all), and a time, and BreezeChat connects them for you. Set the time as a delay (`2d 5h 30min 10s`: s = seconds, min = minutes, h = hours, d = days, m = months) or on a date with the month by name (for example 7 November, 19:30). View, edit or delete schedules from the ☰ menu. Keep BreezeChat running or connected, because schedules only start while the app is alive
+- ⏰ **Schedule account**: pick accounts (or all), pick servers (or all), and a time, and AfkChat connects them for you. Set the time as a delay (`2d 5h 30min 10s`: s = seconds, min = minutes, h = hours, d = days, m = months) or on a date with the month by name (for example 7 November, 19:30). View, edit or delete schedules from the ☰ menu. Keep AfkChat running or connected, because schedules only start while the app is alive
 - 🛡️ **Anti-kick AFK** with a method you choose: Jump, Swing arm, Sneak, Walk, Turn or Quiet
 - 📊 **Session stats**: online time, distance walked, deaths, messages, reconnects, biome and world
 
@@ -53,7 +55,7 @@ What that means for you:
 **Inventory and trading**
 - 🎒 Java-style inventory with your character, armor, held item, durability bars and leather armor colours
 - 📦 **Open chests, barrels, ender chests and shulker boxes from the map**, with **Take all**, **Quick stack** and **Put backpack** buttons
-- 🧑‍🌾 **Trade with villagers from the map**: tap one on the minimap, pick a trade, BreezeChat fills the items for you
+- 🧑‍🌾 **Trade with villagers from the map**: tap one on the minimap, pick a trade, AfkChat fills the items for you
 - 🧰 Mini inventory and hotbar under the map
 
 **App**
@@ -66,10 +68,9 @@ What that means for you:
 
 | | |
 |---|---|
-| <img src="screenshots/1-main-menu.jpg" width="260"><br>**Main menu.** Your accounts (swipe left or right), your servers with ping and player count, and a **Connections** bar showing every running session. The **+** button adds a server. The **☰ button at the top left** opens the other menus: quick commands, session stats, chat alerts, settings and help. | <img src="screenshots/1b-chat.jpg" width="260"><br>**Chat.** Chat and commands with the **Cmd** button. Each account has its own tab, and **+** adds another account. **Press and hold a message** for a menu: reply (/msg), ignore the player, translate (Indonesian or English), copy. |
-| <img src="screenshots/2-join.jpg" width="260"><br>**Join a server.** Tap a server and choose which account joins, or **Connect all accounts** to bring them all online. | <img src="screenshots/3-player-list.jpg" width="260"><br>**Player list.** Everyone online with ping, and a search box to find a player fast. **Tap a player** for a menu: send a private message, follow, request teleport (/tpa), copy the name, or run your own saved commands (use `{player}` for their name). |
-| <img src="screenshots/4-map.jpg" width="260"><br>**Map and movement.** Live minimap with players and mobs, zoom, waypoints (📍) and minimap settings (⚙), hotbar, joystick, sneak, and a pad to look around. | <img src="screenshots/5-inventory.jpg" width="260"><br>**Inventory.** Armor, your character, off hand, backpack and hotbar. Tap to pick up or put down, hold to right click, double tap for options. |
-| <img src="screenshots/6-commands.jpg" width="260"><br>**Commands.** Browse the server's own command list, save your own commands, or complete a player name. |  |
+| <img src="screenshots/1-main-menu.jpg" width="260"><br>**Main menu.** Your accounts (swipe left or right), your servers with ping and player count, and a **Connections** card showing every running session. The **+** button adds a server. Tap a server to join with the account you choose, or connect all accounts at once. The **☰ button at the top left** opens the other menus: quick commands, schedule account, session stats, chat alerts, settings and help. | <img src="screenshots/1b-chat.jpg" width="260"><br>**Chat.** Chat and commands with the **Cmd** button. Each account has its own tab, and **+** adds another account. **Press and hold a message** for a menu: reply (/msg), ignore the player, translate (Indonesian or English), copy. The bar at the bottom switches between Chat, Players, Bag and Map. |
+| <img src="screenshots/3-player-list.jpg" width="260"><br>**Player list.** Everyone online with ping, and a search box to find a player fast. **Tap a player** for a menu: send a private message, follow, request teleport (/tpa), copy the name, or run your own saved commands (use `{player}` for their name). | <img src="screenshots/4-map.jpg" width="260"><br>**Map and movement.** Live minimap with players and mobs, zoom, waypoints (📍) and minimap settings (⚙), hotbar, joystick and sneak. |
+| <img src="screenshots/5-inventory.jpg" width="260"><br>**Inventory.** Armor, your character, off hand, backpack and hotbar. Tap to pick up or put down, hold to right click, double tap for options. | <img src="screenshots/6-commands.jpg" width="260"><br>**Commands.** Browse the server's own command list, save your own commands, or complete a player name. |
 
 ## 🎮 Supported versions
 
@@ -82,9 +83,9 @@ Pick the server's version in the server form. If a server refuses the connection
 
 ## 📲 Download and install
 
-1. Open the [**Releases**](https://github.com/gembiltoo/BreezeChat/releases) page and download the newest `.apk`.
+1. Open the [**Releases**](https://github.com/gembiltoo/AfkChat/releases) page and download the newest `.apk`.
 2. Open the file. Android may ask you to allow installing apps from your browser or file manager.
-3. Open BreezeChat. The app is in **English** at first; change it in **⚙ Settings → Language**.
+3. Open AfkChat. The app is in **English** at first; change it in **⚙ Settings → Language**.
 
 ## 🚀 Quick start
 
@@ -97,7 +98,7 @@ Pick the server's version in the server form. If a server refuses the connection
 
 ## 🕹️ Using the game screen
 
-The top bar has four tabs: 💬 chat, 👥 players, 🎒 inventory, 📍 map and movement.
+The bar at the bottom has four tabs: 💬 Chat, 👥 Players, 🎒 Bag (inventory), 📍 Map (map and movement).
 
 - **Chat**: type a message or a `/command`. **Cmds** opens saved commands and the server's command list. Press and hold a chat line for reply, ignore, translate or copy.
 - **Players**: tap a player to send a private message, follow, `/tpa` or run your saved commands. The **Player list** button at the top searches every online player.
@@ -106,16 +107,16 @@ The top bar has four tabs: 💬 chat, 👥 players, 🎒 inventory, 📍 map and
 
 ## 🔋 Staying online in the background
 
-Some phones (Samsung, Xiaomi and others) stop apps that run in the background, and the server then disconnects you with "Timed out". In **Settings → Stay connected in the background**, open the battery list and set BreezeChat to **Unrestricted**. Keep the notification visible: it has **Open** and **Leave all** buttons.
+Some phones (Samsung, Xiaomi and others) stop apps that run in the background, and the server then disconnects you with "Timed out". In **Settings → Stay connected in the background**, open the battery list and set AfkChat to **Unrestricted**. Keep the notification visible: it has **Open** and **Leave all** buttons.
 
 ## 🛠️ Build it yourself
 
-BreezeChat is a set of plain Java files, made to be built in an Android app builder on a phone.
+AfkChat is a set of plain Java files, made to be built in an Android app builder on a phone.
 
-1. Create a project with the package name **`com.breezechat.gem`**.
-2. Put the Java files (`BreezeAuth`, `BreezeBlocks`, `BreezeChatUI`, `BreezeClient`, `BreezeItems`, `BreezeLang`, `BreezeService`) in the project's `java` folder.
-3. Register `com.breezechat.gem.BreezeService` as a service in the AndroidManifest and add the permissions: INTERNET, FOREGROUND_SERVICE, POST_NOTIFICATIONS, WAKE_LOCK and VIBRATE (VIBRATE is only for chat alerts).
-4. From the main activity, create `BreezeChatUI` and show its view (see `BreezeChatUI.build()`), and pass shortcut extras (`bc_srv`, `bc_acc`) to it.
+1. Create a project with the package name **`com.afkchat.gem`**.
+2. Put the Java files (`AfkAuth`, `AfkBlocks`, `AfkChatUI`, `AfkClient`, `AfkItems`, `AfkLang`, `AfkService`) in the project's `java` folder.
+3. Register `com.afkchat.gem.AfkService` as a service in the AndroidManifest and add the permissions: INTERNET, FOREGROUND_SERVICE, POST_NOTIFICATIONS, WAKE_LOCK and VIBRATE (VIBRATE is only for chat alerts).
+4. From the main activity, create `AfkChatUI` and show its view (see `AfkChatUI.build()`), and pass shortcut extras (`bc_srv`, `bc_acc`) to it.
 
 ## ⚠️ Known limitations
 
@@ -132,9 +133,9 @@ BreezeChat is a set of plain Java files, made to be built in an Android app buil
 
 ## 🐞 Feedback
 
-Found a bug? Open an [issue](https://github.com/gembiltoo/BreezeChat/issues) and include:
+Found a bug? Open an [issue](https://github.com/gembiltoo/AfkChat/issues) and include:
 
-- BreezeChat version, phone model and Android version
+- AfkChat version, phone model and Android version
 - Server version, and plugins if you know them (login, menus)
 - What you did, what you expected, what happened
 - A screenshot or the exact message shown in the app
